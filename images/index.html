@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .carousel-item {
+      height: 100vh;
+      /* Full-screen height */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Dark overlay for text visibility */
+    }
+
+    .carousel-caption {
+      z-index: 2;
+    }
+
+    .carousel-caption h1,
+    .carousel-caption p {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Carousel Section -->
+  <div id="landingCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active"
+        style="background-image: url('asset/chief\ \(6\).jpg');">
+        <div class="overlay"></div>
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h1 class="fw-bold">Welcome To Cashbridge Mfbank</h1>
+          <p class="lead">Discover amazing solutions for your financial needs </p>
+          <a href="#features" class="btn btn-primary btn-lg">Get Started</a>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item" style="background-image: url('https://via.placeholder.com/1920x1080?text=Slide+2');">
+        <div class="overlay"></div>
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h1>Innovate with Us</h1>
+          <p class="lead">Join thousands of happy users</p>
+          <a href="#features" class="btn btn-success btn-lg">Learn More</a>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item" style="background-image: url('https://via.placeholder.com/1920x1080?text=Slide+3');">
+        <div class="overlay"></div>
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h1>Your Success, Our Commitment</h1>
+          <p class="lead">Let's grow together</p>
+          <a href="#features" class="btn btn-light btn-lg">Join Us</a>
+        </div>
+      </div>
+    </div>
+    <!-- Optional Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#landingCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#landingCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <footer class="text-center py-4 bg-dark text-light">
+    &copy; 2024 Your Website. All rights reserved.
+  </footer>
+  <!-- Bootstrap JS -->
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
